@@ -4,7 +4,6 @@ import lombok.experimental.UtilityClass;
 import lombok.extern.log4j.Log4j2;
 
 import java.time.Duration;
-import java.time.temporal.ChronoUnit;
 
 @Log4j2
 @UtilityClass
@@ -18,7 +17,7 @@ public class TimeUtils {
 
     public void waitFor(Duration duration) {
         try {
-            Thread.sleep(duration.get(ChronoUnit.MILLIS));
+            Thread.sleep(duration.toMillis());
         } catch (InterruptedException e) {
             log.error("Exception during wait for {%s}".formatted(duration), e);
             Thread.currentThread().interrupt();
