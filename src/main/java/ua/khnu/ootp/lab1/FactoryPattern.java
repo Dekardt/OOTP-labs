@@ -1,9 +1,9 @@
-package ua.khnu.lab1;
+package ua.khnu.ootp.lab1;
 
-import ua.khnu.core.food.Borshch;
-import ua.khnu.core.food.Food;
-import ua.khnu.core.food.FoodType;
-import ua.khnu.core.food.Pasta;
+import ua.khnu.ootp.core.food.Borshch;
+import ua.khnu.ootp.core.food.Food;
+import ua.khnu.ootp.core.food.FoodType;
+import ua.khnu.ootp.core.food.Pasta;
 
 import java.util.List;
 

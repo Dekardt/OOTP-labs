@@ -1,4 +1,4 @@
-package ua.khnu.core.utils;
+package ua.khnu.ootp.core.utils;
 
 import lombok.experimental.UtilityClass;
 import lombok.extern.log4j.Log4j2;

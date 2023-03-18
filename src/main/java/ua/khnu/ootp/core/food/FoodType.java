@@ -1,4 +1,4 @@
-package ua.khnu.core.food;
+package ua.khnu.ootp.core.food;
 
 public enum FoodType {
     PASTA,

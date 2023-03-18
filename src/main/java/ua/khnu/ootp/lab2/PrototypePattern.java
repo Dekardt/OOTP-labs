@@ -1,20 +1,15 @@
-package ua.khnu.lab2;
+package ua.khnu.ootp.lab2;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import lombok.extern.log4j.Log4j2;
-import ua.khnu.core.food.Borshch;
-import ua.khnu.core.food.Food;
-import ua.khnu.core.food.FoodType;
-import ua.khnu.core.food.Pasta;
+import ua.khnu.ootp.core.food.Borshch;
+import ua.khnu.ootp.core.food.Food;
+import ua.khnu.ootp.core.food.FoodType;
+import ua.khnu.ootp.core.food.Pasta;
 
-import java.awt.*;
 import java.util.EnumMap;
-import java.util.HashMap;
 import java.util.List;
-
-import static ua.khnu.core.food.FoodType.*;
-import static ua.khnu.core.food.FoodType.PASTA;
 
 @Log4j2
 public class PrototypePattern {
@@ -29,15 +24,15 @@ public class PrototypePattern {
 
         public static void initCache() {
             Borshch borshch = new Borshch("pork");
-            foodMap.put(BORSHCH, borshch);
+            foodMap.put(FoodType.BORSHCH, borshch);
 
             Pasta pasta = new Pasta("garlic");
-            foodMap.put(PASTA, pasta);
+            foodMap.put(FoodType.PASTA, pasta);
         }
     }
 
     public static void main(String[] args) {
-        List<FoodType> order = List.of(PASTA, BORSHCH, BORSHCH, BORSHCH, BORSHCH, PASTA);
+        List<FoodType> order = List.of(FoodType.PASTA, FoodType.BORSHCH, FoodType.BORSHCH, FoodType.BORSHCH, FoodType.BORSHCH, FoodType.PASTA);
 
         log.info("Start food cache initialisation");
         FoodCache.initCache();

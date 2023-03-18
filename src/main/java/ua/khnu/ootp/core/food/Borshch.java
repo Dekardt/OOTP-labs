@@ -1,8 +1,7 @@
-package ua.khnu.core.food;
+package ua.khnu.ootp.core.food;
 
 import lombok.extern.log4j.Log4j2;
-
-import static ua.khnu.core.utils.TimeUtils.*;
+import ua.khnu.ootp.core.utils.TimeUtils;
 
 @Log4j2
 public class Borshch implements Food {
@@ -15,7 +14,7 @@ public class Borshch implements Food {
 
     public Borshch(String meatType) {
         log.info("Start simulation of borsch preparing");
-        waitInSeconds(3);
+        TimeUtils.waitInSeconds(3);
         this.meatType = meatType;
         log.info("Borsch is prepared for cooking");
     }

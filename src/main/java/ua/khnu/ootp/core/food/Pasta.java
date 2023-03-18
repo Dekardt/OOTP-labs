@@ -1,7 +1,7 @@
-package ua.khnu.core.food;
+package ua.khnu.ootp.core.food;
 
 import lombok.extern.log4j.Log4j2;
-import static ua.khnu.core.utils.TimeUtils.*;
+import ua.khnu.ootp.core.utils.TimeUtils;
 
 @Log4j2
 public class Pasta implements Food  {
@@ -14,7 +14,7 @@ public class Pasta implements Food  {
 
     public Pasta(String sauce) {
         log.info("Start simulation of pasta preparing");
-        waitInSeconds(5);
+        TimeUtils.waitInSeconds(5);
         this.sauce = sauce;
         log.info("Pasta is prepared for cooking");
     }
