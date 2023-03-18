@@ -1,31 +1,13 @@
 package ua.khnu.lab1;
 
+import ua.khnu.core.food.Borshch;
+import ua.khnu.core.food.Food;
+import ua.khnu.core.food.FoodType;
+import ua.khnu.core.food.Pasta;
+
 import java.util.List;
 
 public class FactoryPattern {
-    public interface Food {
-        void cook();
-    }
-
-    private enum FoodType {
-        PASTA,
-        BORSHCH,
-        PIZZA
-    }
-
-    public static class Pasta implements Food {
-        @Override
-        public void cook() {
-            System.out.println("Cooking pasta");
-        }
-    }
-
-    public static class Borshch implements Food {
-        @Override
-        public void cook() {
-            System.out.println("Cooking borshch");
-        }
-    }
 
     // FoodFactory - This is the factory class that creates Food objects based on a given type.
     public static class FoodFactory {
