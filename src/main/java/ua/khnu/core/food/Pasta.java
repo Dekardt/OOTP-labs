@@ -1,9 +1,12 @@
 package ua.khnu.core.food;
 
+import lombok.extern.log4j.Log4j2;
+
+@Log4j2
 public class Pasta implements Food  {
 
     @Override
     public void cook() {
-        System.out.println("Cooking pasta");
+        log.info("Cooking pasta");
     }
 }
