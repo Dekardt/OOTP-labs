@@ -9,12 +9,12 @@ public class Borshch implements Food {
     private String meatType;
 
     public Borshch() {
-        this("pork");
+        this(0, "pork");
     }
 
-    public Borshch(String meatType) {
+    public Borshch(int delay, String meatType) {
         log.info("Start simulation of borsch preparing");
-        TimeUtils.waitInSeconds(3);
+        TimeUtils.waitInSeconds(delay);
         this.meatType = meatType;
         log.info("Borsch is prepared for cooking");
     }

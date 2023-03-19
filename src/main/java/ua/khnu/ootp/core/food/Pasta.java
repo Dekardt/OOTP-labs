@@ -9,12 +9,12 @@ public class Pasta implements Food  {
     private String sauce;
 
     public Pasta() {
-        this("garlic");
+        this(0, "garlic");
     }
 
-    public Pasta(String sauce) {
+    public Pasta(int delay, String sauce) {
         log.info("Start simulation of pasta preparing");
-        TimeUtils.waitInSeconds(5);
+        TimeUtils.waitInSeconds(delay);
         this.sauce = sauce;
         log.info("Pasta is prepared for cooking");
     }

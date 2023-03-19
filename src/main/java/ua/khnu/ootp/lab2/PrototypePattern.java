@@ -23,10 +23,10 @@ public class PrototypePattern {
         }
 
         public static void initCache() {
-            Borshch borshch = new Borshch("pork");
+            Borshch borshch = new Borshch(3, "pork");
             foodMap.put(FoodType.BORSHCH, borshch);
 
-            Pasta pasta = new Pasta("garlic");
+            Pasta pasta = new Pasta(5, "garlic");
             foodMap.put(FoodType.PASTA, pasta);
         }
     }
