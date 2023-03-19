@@ -1,11 +1,15 @@
 package ua.khnu.ootp.core.food;
 
+import lombok.Getter;
+import lombok.Setter;
 import lombok.extern.log4j.Log4j2;
 import ua.khnu.ootp.core.utils.TimeUtils;
 
 @Log4j2
-public class Pasta implements Food  {
+public class Pasta implements Food {
 
+    @Getter
+    @Setter
     private String sauce;
 
     public Pasta() {
