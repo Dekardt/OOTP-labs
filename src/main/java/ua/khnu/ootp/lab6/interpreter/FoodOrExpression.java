@@ -13,6 +13,6 @@ public class FoodOrExpression implements FoodExpression {
 
     @Override
     public String interpret() {
-        return Arrays.stream(foodExpressions).map(f -> f.getClass().getSimpleName()).collect(Collectors.joining(" or "));
+        return Arrays.stream(foodExpressions).map(FoodExpression::interpret).collect(Collectors.joining(" or "));
     }
 }

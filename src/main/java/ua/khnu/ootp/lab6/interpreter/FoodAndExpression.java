@@ -13,6 +13,6 @@ public class FoodAndExpression implements FoodExpression {
 
     @Override
     public String interpret() {
-        return Arrays.stream(foodExpressions).map(f -> f.getClass().getSimpleName()).collect(Collectors.joining(" and "));
+        return Arrays.stream(foodExpressions).map(FoodExpression::interpret).collect(Collectors.joining(" and "));
     }
 }
